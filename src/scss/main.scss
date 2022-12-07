@@ -1,15 +1,20 @@
 @import "bootstrap/scss/bootstrap-grid";
 
-/* ====================================
-// css variables
-// ==================================== */
+/*  variables ↓ */
 
 :root {
+  --title: museo-sans, sans-serif;
+  --textes: "Balsamiq Sans", cursive;
+  --main-color: #533e36;
+  --secondary-color: #f7f4f3;
 }
 
-/* ====================================
-// reset rules
-// ==================================== */
+/*  fonts ↓ 
+
+font-family: museo-sans, sans-serif;
+font-family: 'Balsamiq Sans', cursive;
+*/
+/*  reset rules ↓ */
 
 * {
   box-sizing: border-box;
@@ -41,9 +46,7 @@ video {
   vertical-align: middle;
 }
 
-/* ====================================
-// bootstrap highlighter
-// ==================================== */
+/*  bootstrap highlighter ↓ */
 
 .row + .row {
   margin-top: 16px;
@@ -57,6 +60,4 @@ video {
   border: 1px solid rgba(86, 61, 124, 0.2);
 }
 
-/* ====================================
-// base rules
-// ==================================== */
+/*  base rules ↓ */
