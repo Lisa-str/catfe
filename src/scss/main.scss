@@ -3,7 +3,7 @@
 /*  variables ↓ */
 
 :root {
-  --title: museo-sans, sans-serif;
+  --title: "museo-sans", sans-serif;
   --textes: "Balsamiq Sans", cursive;
   --main-color: #533e36;
   --secondary-color: #f7f4f3;
@@ -61,3 +61,117 @@ video {
 }
 
 /*  base rules ↓ */
+
+header {
+  nav {
+    font-family: var(--textes);
+    font-size: 16px;
+    color: --main-color;
+    letter-spacing: 0;
+    text-align: right;
+  }
+  .title-presentation {
+    font-family: --title;
+    font-weight: 900;
+    font-size: 50px;
+    color: #f7f4f3;
+    letter-spacing: 1.53px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+main {
+  h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 50px;
+    color: var(--main-color);
+    letter-spacing: 1.53px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .presentation {
+    font-family: var(--textes);
+    font-size: 25px;
+    color: var(--secondary-color);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+  }
+  .button {
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.cafe {
+  h3 {
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--main-color);
+    letter-spacing: 0;
+  }
+  span {
+    font-family: var(--textes);
+    font-size: 23px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: right;
+  }
+  p {
+    font-family: var(--textes);
+    font-size: 20px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+}
+
+.chats {
+  h3 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 45px;
+    color: var(--secondary-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+  p {
+    font-family: var(--textes);
+    font-size: 23px;
+    color: var(--secondary-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+footer {
+  h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 49px;
+    color: var(--secondary-color);
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  p {
+    font-family: var(--textes);
+    font-size: 22px;
+    color: var(--secondary-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .credits {
+    font-family: ArialMT;
+    font-size: 16px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
