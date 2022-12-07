@@ -7,6 +7,7 @@
   --textes: "Balsamiq Sans", cursive;
   --main-color: #533e36;
   --secondary-color: #f7f4f3;
+  --thrid-color: #c9a386;
 }
 
 /*  fonts ↓ 
@@ -46,66 +47,31 @@ video {
   vertical-align: middle;
 }
 
-/*  bootstrap highlighter ↓ */
-
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
-
 /*  base rules ↓ */
 
 header {
   nav {
     font-family: var(--textes);
     font-size: 16px;
-    color: --main-color;
+    color: var(--main-color);
     letter-spacing: 0;
     text-align: right;
   }
   .title-presentation {
-    font-family: --title;
-    font-weight: 900;
-    font-size: 50px;
-    color: #f7f4f3;
-    letter-spacing: 1.53px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-}
-
-main {
-  h2 {
     font-family: var(--title);
     font-weight: 900;
     font-size: 50px;
-    color: var(--main-color);
-    letter-spacing: 1.53px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .presentation {
-    font-family: var(--textes);
-    font-size: 25px;
     color: var(--secondary-color);
-    letter-spacing: 0;
+    letter-spacing: 1.53px;
     text-align: center;
-    line-height: 30px;
+    text-transform: uppercase;
   }
-  .button {
-    font-family: var(--title);
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--main-color);
-    letter-spacing: 0;
-    text-align: center;
+  .introduction {
+    background-image: url(../img/cat-header-introduction.webp);
+    .img,
+    h1 {
+      box-shadow: 0 2px 38px 0 #000000;
+    }
   }
 }
 
@@ -149,9 +115,62 @@ main {
     letter-spacing: 0;
     text-align: center;
   }
+  .button {
+    color: var(--secondary-color);
+  }
+
+  .fa-arrow-right {
+    color: var(--secondary-color);
+  }
+}
+
+main {
+  h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 50px;
+    color: var(--main-color);
+    letter-spacing: 1.53px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .presentation {
+    font-family: var(--textes);
+    font-size: 25px;
+    color: var(--secondary-color);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .presentation-bar {
+    background-color: var(--main-color);
+  }
+  .button {
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .fa-arrow-right {
+    font-family: FontAwesome6Free-Solid;
+    font-size: 20px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .chats {
+    background-color: var(--thrid-color);
+  }
 }
 
 footer {
+  background-image: url(../img/footer-pattern.webp);
+
   h2 {
     font-family: var(--title);
     font-weight: 900;
