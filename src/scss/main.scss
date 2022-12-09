@@ -57,6 +57,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--secondary-color);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.159);
 
   nav {
     font-family: var(--textes);
@@ -133,11 +134,26 @@ header {
   }
 }
 
-/*  sections ↓ */
+/*  main ↓ */
 
-section {
-  padding: 66px 0;
-  box-shadow: 0 5px 10px 0 #000;
+main {
+  h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 50px;
+    color: var(--main-color);
+    letter-spacing: 1.53px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .fa-arrow-right {
+    font-family: FontAwesome6Free-Solid;
+    font-size: 20px;
+    color: var(--main-color);
+    letter-spacing: 0;
+    text-align: center;
+  }
 }
 
 /*  section café ↓ */
@@ -145,12 +161,36 @@ section {
 .cafe {
   background: var(--secondary-color);
 
+  .container-colonne {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 26px;
+    padding-bottom: 75px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .product-data {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
   h3 {
     font-family: var(--title);
     font-weight: 700;
     font-size: 25px;
     color: var(--main-color);
     letter-spacing: 0;
+    // padding-top: 87px;
   }
   span {
     font-family: var(--textes);
@@ -158,13 +198,16 @@ section {
     color: var(--main-color);
     letter-spacing: 0;
     text-align: right;
+    white-space: nowrap;
   }
+
   p {
     font-family: var(--textes);
     font-size: 20px;
     color: var(--main-color);
     letter-spacing: 0;
     line-height: 25px;
+    padding-top: 20px;
   }
 }
 
@@ -181,6 +224,7 @@ section {
     letter-spacing: 0;
     text-align: center;
   }
+
   p {
     font-family: var(--textes);
     font-size: 23px;
@@ -197,35 +241,24 @@ section {
   }
 }
 
-/*  main ↓ */
+/*  sections ↓ */
 
-main {
+section {
+  padding: 66px 0;
+  box-shadow: 0 5px 10px 0 #000;
+
   h2 {
-    font-family: var(--title);
-    font-weight: 900;
-    font-size: 50px;
-    color: var(--main-color);
-    letter-spacing: 1.53px;
-    text-align: center;
-    text-transform: uppercase;
     padding-bottom: 60px;
   }
-  .button {
-    font-family: var(--title);
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--main-color);
-    letter-spacing: 0;
-    text-align: center;
-  }
+}
 
-  .fa-arrow-right {
-    font-family: FontAwesome6Free-Solid;
-    font-size: 20px;
-    color: var(--main-color);
-    letter-spacing: 0;
-    text-align: center;
-  }
+.button {
+  font-family: var(--title) !important;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--main-color);
+  letter-spacing: 0;
+  text-align: center;
 }
 
 /*  footer ↓ */
