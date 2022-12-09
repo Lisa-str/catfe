@@ -25,6 +25,8 @@ font-family: 'Balsamiq Sans', cursive;
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--secondary-color);
 }
 
 body {
@@ -50,28 +52,29 @@ video {
 /*  base rules ↓ */
 
 header {
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-color);
+
   nav {
     font-family: var(--textes);
     font-size: 16px;
     color: var(--main-color);
     letter-spacing: 0;
     text-align: right;
-  }
-  .title-presentation {
-    font-family: var(--title);
-    font-weight: 900;
-    font-size: 50px;
-    color: var(--secondary-color);
-    letter-spacing: 1.53px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .introduction {
-    background-image: url(../img/cat-header-introduction.webp);
-    .img,
-    h1 {
-      box-shadow: 0 2px 38px 0 #000000;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 5%;
+
+    a {
+      text-decoration: none;
     }
+  }
+  .logo {
+    max-width: 35%;
+    padding: 15px 0;
   }
 }
 
@@ -125,14 +128,27 @@ header {
 }
 
 main {
-  h2 {
+  .title-presentation {
     font-family: var(--title);
     font-weight: 900;
     font-size: 50px;
-    color: var(--main-color);
+    color: var(--secondary-color);
     letter-spacing: 1.53px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .introduction {
+    background-image: url(../img/cat-header-introduction.webp);
+    background-size: cover;
+    background-color: #000;
+    h1 {
+      text-shadow: 0 2px 38px 0 #000000;
+    }
+    img {
+      filter: drop-shadow(0 2px 38px 0 #000);
+      padding: 101px 0 22px;
+    }
   }
   .presentation {
     font-family: var(--textes);
@@ -141,10 +157,20 @@ main {
     letter-spacing: 0;
     text-align: center;
     line-height: 30px;
+    padding: 56px;
   }
-
   .presentation-bar {
     background-color: var(--main-color);
+  }
+
+  h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 50px;
+    color: var(--main-color);
+    letter-spacing: 1.53px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .button {
     font-family: var(--title);
@@ -193,4 +219,20 @@ footer {
     letter-spacing: 0;
     text-align: center;
   }
+  a img {
+    width: 5%;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.introduction-in {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
