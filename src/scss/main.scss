@@ -75,6 +75,7 @@ header {
       text-decoration: none;
     }
   }
+
   .logo {
     max-width: 120px;
     padding: 15px 0;
@@ -84,8 +85,27 @@ header {
     .logo {
       max-width: 100px;
     }
+    nav a {
+      display: none;
+    }
+    .burger-menu {
+      font-size: 25px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .burger-menu {
+      visibility: hidden;
+      user-select: none;
+    }
+    header a {
+      opacity: 100%;
+    }
   }
 }
+
+/*  burger menu ↓ */
 
 /*  introduction (logo + title) ↓ */
 
@@ -214,6 +234,21 @@ main {
     letter-spacing: 0;
     line-height: 25px;
     padding-top: 20px;
+  }
+
+  .separator-line {
+    border: solid 2px var(--main-color);
+    border-radius: 2px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    margin: 20px 0 60px;
+  }
+
+  @media (min-width: 768px) {
+    .separator-line {
+      display: none;
+    }
   }
 }
 
