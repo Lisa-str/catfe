@@ -59,6 +59,11 @@ header {
   background-color: var(--secondary-color);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.159);
 
+  .header-holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
   nav {
     font-family: var(--textes);
     font-size: 16px;
@@ -81,22 +86,46 @@ header {
     padding: 15px 0;
   }
 
+  .fa-bars {
+    display: inline-block;
+  }
+
+  /*  burger menu ↓ */
+
   @media (max-width: 800px) {
     .logo {
       max-width: 100px;
     }
-    nav a {
+    nav {
       display: none;
     }
     .burger-menu {
       font-size: 25px;
       padding-right: 20px;
+      align-self: center;
+    }
+
+    .menu-open {
+      font-family: var(--textes);
+      font-size: 23px;
+      color: var(--main-color);
+      letter-spacing: 0;
+      padding: 20px 20px 100%;
+      right: 0;
+      width: 100%;
+      top: 69px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      position: absolute;
+      background-color: var(--secondary-color);
     }
   }
 
   @media (min-width: 800px) {
     .burger-menu {
-      visibility: hidden;
+      display: none;
       user-select: none;
     }
     header a {
@@ -104,8 +133,6 @@ header {
     }
   }
 }
-
-/*  burger menu ↓ */
 
 /*  introduction (logo + title) ↓ */
 
